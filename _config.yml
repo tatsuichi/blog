@@ -20,8 +20,8 @@
 
 title: tatsuichi's blog
 email: tatsuri1984@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Themed by ejjoo
+description: "技術系ブログです。"
+
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://tatsuichi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: tatsuichi
