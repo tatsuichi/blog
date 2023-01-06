@@ -51,26 +51,26 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
 4. Cloneしたフォルダで`bundle exec jekyll serve --baseurl ''`を実行しローカルサーバを立ち上げる
 5. ブラウザから`http://localhost:4000`にアクセスする
 
-### 選択したテーマをカスタマイズする（Monosテーマの場合で説明）
+#### 選択したテーマをカスタマイズする（Monosテーマの場合で説明）
 1. `https://<UserName>.github.io/<リポジトリ>`で公開できるようにhtml内のURLを修正<br>（`https://<UserName>.github.io/`を前提としているようだった）
 2. デザイン（css）の修正
    + 表の枠線を描く
    + コードスパンの背景色を設定
    + フォントの変更
 
-### ブログ記事を書く(Monosテーマの場合で説明)
+#### ブログ記事を書く(Monosテーマの場合で説明)
 1. markdownでブログ記事を書く
 1. `_posts`配下にmarkdownファイルを置く
 1. `bundle exec jekyll serve --baseurl ''`を実行し、ブラウザで記事の見栄えを確認する
 1. 問題がなければ、ブログ用のリポジトリにPushする
 
-### リポジトリをWebページとして公開する
+#### リポジトリをWebページとして公開する
 1. GitHubにサインインする
 1. ブログ用のリポジトリで「Settings > Pages」より公開するBranchを選択し保存する 
 
 ![イメージ](/blog/assets/img/GitHubPagesの設定.png)
 
-## 参考サイト
+# 参考サイト
 + WindowsにJekyllをインストールする
   + [Jekyll on Windows](http://jekyllrb-ja.github.io/docs/installation/windows/)
 + Jelleyのテーマについて
