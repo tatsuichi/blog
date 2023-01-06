@@ -1,0 +1,14 @@
+@startuml デプロイするまでの全体の流れ
+
+|#AntiqueWhite|Windows Server 2019|
+    :Webサーバーを立ち上げる;
+    :Webアプリケーションの実行環境をインストールする;
+
+|Windows10|
+    :デプロイするWebアプリケーションを作成する;
+
+|#AntiqueWhite|Windows Server 2019|
+    :Webアプリケーションを配置する;
+    :WebサーバーにWebアプリケーションを登録する;
+
+@enduml
