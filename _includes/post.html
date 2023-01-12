@@ -13,3 +13,12 @@
 		{{ content }}
 	</div>
 </article>
+
+</div>
+
+
+<div class="toc">
+  <div class="toc-header">目次</div>
+  {% capture itemClass %}toc-entry-toc-h%level%{% endcapture %}
+  {% include toc.html html=content class="ul-level-class" submenu_class="submenu-%level%" item_class=itemClass h_max=2 %}
+</div>
