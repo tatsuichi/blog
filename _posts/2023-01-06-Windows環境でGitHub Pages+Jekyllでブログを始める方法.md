@@ -59,6 +59,7 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
    + 表の枠線を描く
    + コードスパンの背景色を設定
    + フォントの変更
+3. [jekyll-toc](https://github.com/allejo/jekyll-toc)を参考に目次を追加（2023/1/12 追記）
 
 ## ブログ記事を書く(Monosテーマの場合で説明)
 1. Markdownでブログ記事を書く
@@ -68,7 +69,8 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
 
 ## リポジトリをWebページとして公開する
 1. GitHubにサインインする
-1. ブログ用のリポジトリで「Settings > Pages」より公開するBranchを選択し保存する 
+2. ブログ用のリポジトリで「Settings > Pages」より公開するBranchを選択し保存する
+3. ブラウザから`https://<UserName>.github.io/<リポジトリ名>`にアクセスする
 
 ![イメージ](/blog/assets/img/GitHubPagesの設定.png)
 
@@ -81,3 +83,6 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
 + トラブルシューティング
   + [Jekyllを実行した時に bundler: failed to load command: jekyll, `require': cannot load such file -- webrick (LoadError) が出るときの対処法](https://tex2e.github.io/blog/ruby/jekyll-cannot-load-webrick)
   + [はじめてのJekyll on Github Pages - たけぞう瀕死ブログ](https://takezoe.hatenablog.com/entry/20140608/p1)
++ 目次（2023/1/12 追記）
+  + [#jekyll GitHub Pagesでも目次(ToC)は作れる - Kotet's Personal Blog](https://blog.kotet.jp/2018/04/toc-on-github-pages/)
+  + [Jekyll製ブログの記事に目次を追加する · Change Of Pace](https://changeofpace.site/posts/2019-11-10-jekyll-toc)
