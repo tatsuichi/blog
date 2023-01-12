@@ -30,7 +30,7 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
  （リポジトリは、`<UserNmae>/<UserNmae>.github.io`ではなく、`<UserNmae>/<リポジトリ名>`です）
 
 # 手順
-#### WindowsにJekyllをインストールする
+## WindowsにJekyllをインストールする
 + ローカルPCで動作確認するためにインストールする
 + Jekyllは、Markdownから静的サイトを作成し、ローカルサーバー`localhost:4000`の立ち上げまで、やってくれる。
 + JekyllはRuby製でRubyの実行環境をインストールする必要がある
@@ -40,7 +40,7 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
 1. `gem install jekyll bundler`でJekyllとBundlerをインストールする
 1. `jekyll -v`でインストールされたか確認する
 
-#### ブログのテーマを選ぶ
+## ブログのテーマを選ぶ
 + 自分で1からWebサイトをデザインするのは大変なのでテーマサイトよりテーマを選択する（`jekyll new <フォルダ名>`で初期環境は構築できるがデザイン性は乏しい）
 + テーマサイトには、GitHub上でリポジトリが公開されているものが集められている
 + テーマによってリポジトリの構成が異なるため、後からテーマを変更するのは大変となる（簡単に移行できない）
@@ -53,20 +53,20 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
 4. Cloneしたフォルダで`bundle exec jekyll serve --baseurl ''`を実行しローカルサーバを立ち上げる
 5. ブラウザから`http://localhost:4000`にアクセスする
 
-#### 選択したテーマをカスタマイズする（Monosテーマの場合で説明）
+## 選択したテーマをカスタマイズする（Monosテーマの場合で説明）
 1. `https://<UserName>.github.io/<リポジトリ名>`で公開できるようにhtml内のURLを修正<br>（`https://<UserName>.github.io/`を前提としているようだった）
 2. デザイン（css）の修正
    + 表の枠線を描く
    + コードスパンの背景色を設定
    + フォントの変更
 
-#### ブログ記事を書く(Monosテーマの場合で説明)
+## ブログ記事を書く(Monosテーマの場合で説明)
 1. Markdownでブログ記事を書く
 1. `_posts`配下にMarkdownファイルを置く
 1. `bundle exec jekyll serve --baseurl ''`を実行し、ブラウザで記事の見栄えを確認する
 1. 問題がなければ、ブログ用のリポジトリにPushする
 
-#### リポジトリをWebページとして公開する
+## リポジトリをWebページとして公開する
 1. GitHubにサインインする
 1. ブログ用のリポジトリで「Settings > Pages」より公開するBranchを選択し保存する 
 
