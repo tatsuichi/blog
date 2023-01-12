@@ -361,3 +361,36 @@ footer {
 		display: none;
 	}
 }
+
+.toc {
+	/*position: fixed;*/
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 0 0 270px;
+	padding: 5px;
+	z-index: 1;
+	background-color: #222;
+	color: #fff;
+}
+
+.toc-header {
+	position: sticky;
+	top: 120px;
+}
+
+.toc a {
+	color: #aaa;
+}
+
+.toc .ul-level-class {
+	position: sticky;
+	top: 150px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 20px;
+	font-size: smaller;
+}
+
+.toc .toc-entry-toc-h1 .submenu-1 {
+	padding-left: 0px;
+}
