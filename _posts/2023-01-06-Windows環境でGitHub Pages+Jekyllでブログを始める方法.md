@@ -26,8 +26,8 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
 > 好きなマークアップ言語で書かれたテキストを用意すれば、Jekyllはレイアウトを合成して静的サイトを作成します。
 
 # 前提
-+ GitHubにブログ用のリポジトリ`blog`が作成されていること
- （リポジトリは、`<UserNmae>/<UserNmae>.github.io`ではなく、`<UserNmae>/<リポジトリ名>`です）
+GitHubにブログ用のリポジトリ`blog`が作成されていること<br>
+（リポジトリは、`<UserNmae>/<UserNmae>.github.io`ではなく、`<UserNmae>/<リポジトリ名>`です）
 
 # 手順
 ## WindowsにJekyllをインストールする
@@ -53,7 +53,8 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
 4. Cloneしたフォルダで`bundle exec jekyll serve --baseurl ''`を実行しローカルサーバを立ち上げる
 5. ブラウザから`http://localhost:4000`にアクセスする
 
-## 選択したテーマをカスタマイズする（Monosテーマの場合で説明）
+## 選択したテーマをカスタマイズする
+Monosテーマの場合で説明します。
 1. `https://<UserName>.github.io/<リポジトリ名>`で公開できるようにhtml内のURLを修正<br>（`https://<UserName>.github.io/`を前提としているようだった）
 2. デザイン（css）の修正
    + 表の枠線を描く
@@ -61,7 +62,8 @@ Jekyllとは、[公式サイト](http://jekyllrb-ja.github.io/docs/)より引用
    + フォントの変更
 3. [jekyll-toc](https://github.com/allejo/jekyll-toc)を参考に目次を追加（2023/1/12 追記）
 
-## ブログ記事を書く(Monosテーマの場合で説明)
+## ブログ記事を書く
+Monosテーマの場合で説明します。
 1. Markdownでブログ記事を書く
 1. `_posts`配下にMarkdownファイルを置く
 1. `bundle exec jekyll serve --baseurl ''`を実行し、ブラウザで記事の見栄えを確認する
