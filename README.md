@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: about/
 ---
-技術系のブログです。
+技術系のブログです。GitHubは[こちら](https://github.com/tatsuichi)です。
 
 # プロフィール
 
