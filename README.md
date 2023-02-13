@@ -23,6 +23,7 @@ C言語、C#、HTML/CSS/JavaScript
 2017/12　応用情報技術者試験<br>
 2020/03　AWS Certified Solutions Architect - Associate<br>
 2022/06　統計検定2級<br>
+2023/02　AWS Certified Developer - Associate<br>
 
 # ブログ
 ## 構成
