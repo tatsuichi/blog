@@ -2,7 +2,7 @@
 layout: post
 title: "VS Code(dotnetコマンド)でクラスライブラリを追加する手順"
 date: 2023-02-21
-categories: C#
+category: C#
 ---
 # 環境
 - VS Code
