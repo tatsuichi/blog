@@ -15,7 +15,8 @@ Windows 10 64bit
 + [TortoiseGit](https://tortoisegit.org/)
 
 ## Git for Windows
-WindowsでGitコマンドを使用できるようにする。[WindowsにGitをインストールする手順(2022年12月更新)](https://www.curict.com/item/60/60bfe0e.html)を参考にさせて頂きました。
+WindowsでGitコマンドを使用できるようにする。<br>
+[WindowsにGitをインストールする手順(2022年12月更新)](https://www.curict.com/item/60/60bfe0e.html)を参考にさせて頂きました。
 + [インストーラ v2.38.1(64bit版)](https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-64-bit.exe)
 
 ## TortoiseGit
