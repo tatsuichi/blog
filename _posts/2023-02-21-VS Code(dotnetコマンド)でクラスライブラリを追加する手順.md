@@ -5,9 +5,10 @@ date: 2023-02-21
 category: C#
 ---
 # 環境
+- Windows 10 64bit / WSL
 - VS Code
-- WSL
-- .NET 6
+- C#
+- .NET 6.0
 - コンソールアプリケーション
 
 # 構成（ゴール）
