@@ -49,7 +49,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
 	color: #000000;
 }
 
@@ -256,7 +256,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-	font-family: "Roboto", "Nanum Gothic";
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
 	color: #333;
   	margin-bottom: 0;
 }
