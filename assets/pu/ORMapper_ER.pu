@@ -1,0 +1,24 @@
+@startuml ORMapper_ER
+entity Course {
+  * CourseID
+  --
+  Title
+  Credits
+}
+entity Enrollment {
+  * EnrollmentID
+  --
+  CourseID <<FK>>
+  StudentID <<FK>>
+  Grade
+}
+entity Student {
+  * ID
+  --
+  LastName
+  FirstMidName
+  EnrollmentDate
+}
+Course ||-r-o{ Enrollment
+Enrollment }o-r-|| Student
+@enduml
