@@ -64,7 +64,7 @@ EF Coreは下記の開発手法をサポートしてます。<br>
   ASP.NET CoreのスキャフォールディングにEF Coreを組み合わせることもできます。<br>
   ![イメージ](/blog/assets/img/ORMapper_スキャフォールディング.png)<br>
   **手順**<br>
-  Visual StudioのソリューションエクスプローラーでASP.NET Coreのプロジェクトを右クリックして「追加」>「新規スキャフォールディングアイテムの追加」で、追加するアイテムを選択する。<br>
+  Visual StudioのソリューションエクスプローラーでASP.NET Coreのプロジェクトを右クリックして「追加」>「新規スキャフォールディングアイテム」で、追加するアイテムを選択する。<br>
   ![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore.png)<br>
 
 # EF Coreを使う
@@ -213,7 +213,7 @@ NuGetで下記のパッケージをインストールします。
 ![イメージ](/blog/assets/img/ORMapeer_含まれるパッケージ.png)
 
 ## モデルクラスの作成
-Modelsフォルダにエンティティのクラスを作成します。<br>
+`Models`フォルダにエンティティのクラスを作成します。<br>
 ![イメージ](/blog/assets/img/ORMapper_ER.png)
 ```text
 Models
@@ -270,11 +270,10 @@ namespace WebApplicationEFCore.Models
 ```
 
 ## スキャフォールディングで自動生成
-ASP.NET Coreのスキャフォールディングで、
-DBの`Student`テーブルを、画面操作でCRUDできるようにファイルを自動生成します。
+ASP.NET Coreのスキャフォールディングで、DBの`Student`テーブルを、画面操作でCRUDできるようにファイルを自動生成します。
 
-Visual Studioのソリューションエクスプローラーで「Controllers」フォルダを右クリックして、<br>
-「追加」>「新規スキャフォールディングアイテムの追加」を選択します。<br>
+Visual Studioのソリューションエクスプローラーで`Controllers`フォルダを右クリックして、<br>
+「追加」>「新規スキャフォールディングアイテム」を選択します。<br>
 ![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore1.png)<br>
 「Entity Frameworkを使用したビューがあるMVCコントローラー」を選択します。<br>
 ![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore2.png)<br>
@@ -425,7 +424,7 @@ namespace WebApplicationEFCore.Controllers
 ```
 ## データベース設定
 ### データベース例外フィルターの追加
-EF Coreへの移行時にエラーが発生した場合、解決案をHTMLで返すように、`Program.cs`で`AddDatabaseDeveloperPageExceptionFilter`を呼び出します。（未検証）
+EF Coreへの移行時にエラーが発生した場合、解決案をHTMLで返すように、`Program.cs`で`AddDatabaseDeveloperPageExceptionFilter()`メソッドを呼び出します。（未検証）
 
 ```diff
 using Microsoft.EntityFrameworkCore;
