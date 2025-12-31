@@ -12,7 +12,7 @@ category: Jekyll
 + Windows 10 64bit
 
 # 構成
-![イメージ](/blog/assets/img/GithubPagesとJekyllの構成図.png)
+![イメージ](/blog/assets/img/2023-01-06/GithubPagesとJekyllの構成図.png)
 + [GitHub Pages](https://docs.github.com/ja/pages)
 + [Jekyll](http://jekyllrb-ja.github.io/)
 
@@ -74,7 +74,7 @@ Monosテーマの場合で説明します。
 2. ブログ用のリポジトリで「Settings > Pages」より公開するBranchを選択し保存する
 3. ブラウザから`https://<UserName>.github.io/<リポジトリ名>`にアクセスする
 
-![イメージ](/blog/assets/img/GitHubPagesの設定.png)
+![イメージ](/blog/assets/img/2023-01-06/GitHubPagesの設定.png)
 
 # 参考サイト
 + WindowsにJekyllをインストールする
