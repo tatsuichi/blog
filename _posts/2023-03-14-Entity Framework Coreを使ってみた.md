@@ -45,7 +45,7 @@ EF Coreには便利な[コマンドツール](https://learn.microsoft.com/ja-jp/
 EF Coreは下記の開発手法をサポートしてます。<br>
 + Code-First<br>
   モデルクラスを作成し、それを基にデータベースのテーブルを作成する。<br>
-  ![イメージ](/blog/assets/img/ORMapper_CodeFirst.png)<br>
+  ![イメージ](/blog/assets/img/2023-03-14/ORMapper_CodeFirst.png)<br>
   **手順**<br>
   コマンドプロンプトで、下記の`.NET CLI`を実行する
   ```bat
@@ -54,7 +54,7 @@ EF Coreは下記の開発手法をサポートしてます。<br>
   ```
 + Database-First<br>
   データベースにすでにテーブルがあり、それをリバースエンジニアリングしてモデルクラスを作成する。<br>
-  ![イメージ](/blog/assets/img/ORMapper_DatabaseFirst.png)<br>
+  ![イメージ](/blog/assets/img/2023-03-14/ORMapper_DatabaseFirst.png)<br>
   **手順**<br>
   コマンドプロンプトで、下記の`.NET CLI`を実行する
   ```bat
@@ -62,10 +62,10 @@ EF Coreは下記の開発手法をサポートしてます。<br>
   ```
 + スキャフォールディング<br>
   ASP.NET CoreのスキャフォールディングにEF Coreを組み合わせることもできます。<br>
-  ![イメージ](/blog/assets/img/ORMapper_スキャフォールディング.png)<br>
+  ![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディング.png)<br>
   **手順**<br>
   Visual StudioのソリューションエクスプローラーでASP.NET Coreのプロジェクトを右クリックして「追加」>「新規スキャフォールディングアイテム」で、追加するアイテムを選択する。<br>
-  ![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore.png)<br>
+  ![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore.png)<br>
 
 # EF Coreを使う
 [Microsoftのチュートリアル](https://learn.microsoft.com/ja-jp/aspnet/core/data/ef-mvc/?view=aspnetcore-7.0)を基に、ASP.NET CoreでEF Coreを使ってみました。<br>
@@ -80,22 +80,22 @@ EF Coreは下記の開発手法をサポートしてます。<br>
 + SQL Server Express LocalDB
 
 ## 構成
-![イメージ](/blog/assets/img/ORMapper_構成.png)
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_構成.png)
 
 ## プロジェクト作成
 プロジェクトテンプレートは「ASP.NET Core Webアプリ（Model-View-Controller）」を選択します。<br>
-![イメージ](/blog/assets/img/ORMapeer_プロジェクト作成.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapeer_プロジェクト作成.png)<br>
 プロジェクト名は`WebApplicationEFCore`にします。<br>
-![イメージ](/blog/assets/img/ORMapeer_プロジェクト名.png)
+![イメージ](/blog/assets/img/2023-03-14/ORMapeer_プロジェクト名.png)
 
 ## Webサイトのスタイル設定
 サイトのホームページ、レイアウト、メニューを設定します。
 
 **スタイル変更前（デフォルト）**<br>
-![イメージ](/blog/assets/img/ORMapper_スタイル変更前.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スタイル変更前.png)<br>
 
 **スタイル変更後**<br>
-![イメージ](/blog/assets/img/ORMapper_スタイル変更後.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スタイル変更後.png)<br>
 
 サイトのホームページを設定します。<br>
 `Views\Home\Index.cshtml`を下記の内容に置き換えます。<br>
@@ -210,11 +210,11 @@ NuGetで下記のパッケージをインストールします。
 
 `Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore`のパッケージには<br>
 `Microsoft.EntityFrameworkCore`が含まれてます。<br>
-![イメージ](/blog/assets/img/ORMapeer_含まれるパッケージ.png)
+![イメージ](/blog/assets/img/2023-03-14/ORMapeer_含まれるパッケージ.png)
 
 ## モデルクラスの作成
 `Models`フォルダにエンティティのクラスを作成します。<br>
-![イメージ](/blog/assets/img/ORMapper_ER.png)
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_ER.png)
 ```text
 Models
  ├─ Course.cs         // 新規に追加する
@@ -274,19 +274,19 @@ ASP.NET Coreのスキャフォールディングで、DBの`Student`テーブル
 
 Visual Studioのソリューションエクスプローラーで`Controllers`フォルダを右クリックして、<br>
 「追加」>「新規スキャフォールディングアイテム」を選択します。<br>
-![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore1.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore1.png)<br>
 「Entity Frameworkを使用したビューがあるMVCコントローラー」を選択します。<br>
-![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore2.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore2.png)<br>
 作成元となるモデルクラスを、ドロップダウンリストから`Student`クラスを選択します。<br>
-![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore3.png)<br>
-![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore4.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore3.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore4.png)<br>
 コントローラー名は自動補完してくれます。<br>
-![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore5.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore5.png)<br>
 データコンテキストのクラス名は自動補完してくれます。<br>
-![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore6.png)<br>
-![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore7.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore6.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore7.png)<br>
 「追加」をクリックすると、自動生成されます。<br>
-![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore8.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore8.png)<br>
 
 スキャフォールディング後は下記のようになります。
 ```text
@@ -309,7 +309,7 @@ Visual Studioのソリューションエクスプローラーで`Controllers`フ
 + `Student`テーブルのCRUD用のコントローラークラス`Controllers\StudentsController.cs`、ビューファイル`Views\Students\*.cshtml`が追加されます。<br>
   これにより、サイトのヘッダーにある「Students」をクリックすると
   `Controllers\StudentsController.cs`が呼び出され、CRUDの操作画面と紐付きます。<br>
-  ![イメージ](/blog/assets/img/ORMapper_スキャフォールディングEFCore9.png)
+  ![イメージ](/blog/assets/img/2023-03-14/ORMapper_スキャフォールディングEFCore9.png)
 
 + `appsettings.json`にデータベースへの接続情報が追記されます。
 
@@ -507,7 +507,7 @@ namespace WebApplicationEFCore.Data
 
 DbSetのプロパティ名を`Student`から`Students`に変更する場合は、<br>
 `Student`プロパティを右クリックして「名前の変更」で変更すると、影響範囲のコントローラークラスも修正してくるので便利です。<br>
-![イメージ](/blog/assets/img/ORMapper_DbSetのプロパティ名変更.png)
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_DbSetのプロパティ名変更.png)
 
 ### データを投入するクラスの追加
 データベースにデータを投入するクラス`Data\DbInitializer.cs`を追加します。
@@ -649,25 +649,25 @@ namespace WebApplicationEFCore
 
 ## Webアプリの実行
 Visual Studioでデバッグ`F5`実行して、「SQL Serverオブジェクトエクスプローラー」を開くと、テーブルが作成されており、<br>
-![イメージ](/blog/assets/img/ORMapper_Webアプリ実行結果1.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_Webアプリ実行結果1.png)<br>
 
 `dbo.Student`を右クリックして「データの表示」を選択します。<br>
-![イメージ](/blog/assets/img/ORMapper_Webアプリ実行結果2.png)<br>
-![イメージ](/blog/assets/img/ORMapper_Webアプリ実行結果3.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_Webアプリ実行結果2.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_Webアプリ実行結果3.png)<br>
 
 `Student`テーブルの内容が、Webアプリで確認できます。<br>
-![イメージ](/blog/assets/img/ORMapper_Webアプリ実行結果4.png)<br>
-![イメージ](/blog/assets/img/ORMapper_Webアプリ実行結果5.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_Webアプリ実行結果4.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_Webアプリ実行結果5.png)<br>
 
 一番上のレコードの「Edit」をクリックして更新すると、<br>
-![イメージ](/blog/assets/img/ORMapper_Webアプリ実行結果6.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_Webアプリ実行結果6.png)<br>
 一覧も更新され、<br>
-![イメージ](/blog/assets/img/ORMapper_Webアプリ実行結果7.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_Webアプリ実行結果7.png)<br>
 データベースと一致していることが分かります。<br>
-![イメージ](/blog/assets/img/ORMapper_Webアプリ実行結果8.png)<br>
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_Webアプリ実行結果8.png)<br>
 
 ヘッダーの「About」「Courses」「Instructors」「Departments」は、今回は実装しません。クリックすると404エラーとなります。<br>
-![イメージ](/blog/assets/img/ORMapper_未実装.png)
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_未実装.png)
 
 ## SQLクエリの確認
 EF Coreが実行するSQLクエリは、デバッグコンソールに出力されます。
@@ -875,10 +875,10 @@ public async Task<IActionResult> Index(
 ```
 
 Visual Studioでデバッグ`F5`実行すると、ソート、フィルター、ページングができるようになってます。<br>
-![イメージ](/blog/assets/img/ORMapper_ソートフィルターページング.png)
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_ソートフィルターページング.png)
 
 「Enrollment Date」でソートし、「i」でフィルターし、2ページ目を表示した例です。<br>
-![イメージ](/blog/assets/img/ORMapper_ソートフィルターページング例.png)
+![イメージ](/blog/assets/img/2023-03-14/ORMapper_ソートフィルターページング例.png)
 
 # さいごに
 EF Coreを使うと、生SQLクエリ（DDL、DML）を書かなくてもDBの操作ができ、Code-Firstは便利に感じました。ただ、EF CoreのバックグラウンドでSQLクエリを実行するので、何のSQLクエリが、いつ実行されているのかは、把握していたほうがデバッグやパフォーマンスのチューニング等に役に立つと思いました。

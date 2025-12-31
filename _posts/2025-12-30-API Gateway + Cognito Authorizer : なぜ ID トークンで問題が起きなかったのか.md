@@ -25,7 +25,7 @@ Cognito Authorizer には、ID トークンを指定してます。<br>
 
 ## バックエンド構成
 
-![バックエンド構成](/blog/assets/img/API%20Gateway+Cognito%20Authorizer.drawio.png)
+![バックエンド構成](/blog/assets/img/2025-12-30/API%20Gateway+Cognito%20Authorizer.drawio.png)
 
 ## 責務
 
