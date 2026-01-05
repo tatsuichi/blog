@@ -38,6 +38,8 @@ category: Python
 poetry update
 ```
 
+`poetry.lock`が更新される
+
 ## 制約外のバージョンアップ
 
 `pyproject.toml`に記載されているバージョン制約自体を更新する
@@ -51,6 +53,8 @@ poetry add
 ``` sh
 poetry add パッケージ名@latest
 ```
+
+`pyproject.toml`、`poetry.lock`が更新される
 
 # エラー発生手順
 
